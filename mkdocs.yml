@@ -1,0 +1,43 @@
+site_name: Datamanagement Workshop
+site_author: Adina Wagner & Lennart Wittkuhn
+repo_url: https://github.com/adswa/mpi-datamanagement-ws
+repo_name: adswa/mpi-datamanagement-ws
+docs_dir: docs
+copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
+nav:
+  - Home: index.md
+  - Ideas: ideas.md
+markdown_extensions:
+    - admonition
+    - codehilite:
+        linenums: true
+        guess_lang: false
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - toc:
+        baselevel: 1
+        permalink: true
+        separator: "_"
+        toc_depth: 3
+        anchorlink: false
+theme:
+    name: material
+    language: en
+    palette:
+        primary: 'black'
+        accent: yellow
+plugins:
+    - search
