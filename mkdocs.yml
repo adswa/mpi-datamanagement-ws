@@ -1,6 +1,7 @@
 site_name: Datamanagement Workshop
 site_author: Adina Wagner & Lennart Wittkuhn
 repo_url: https://github.com/adswa/mpi-datamanagement-ws
+site_url: https://adswa.github.io/mpi-datamanagement-ws/
 repo_name: adswa/mpi-datamanagement-ws
 docs_dir: docs
 copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
