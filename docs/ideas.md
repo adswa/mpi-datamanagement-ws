@@ -69,6 +69,9 @@ ___
 * Recording set up
 * Recording publication (platforms, time frame (live streaming, publishing
   post-workshop/...))
+* Idea: Migrate this repository to the handbook repository, keep mkdocs, and
+  create a github page under the handbook namespace -> easier to find, more
+  lasting resource
 * Virtual attendance procedures: Client (Zoom/Jitsi/Hangouts), procedures
   for participation (how/when to raise questions, interactivity?)
 * Accessibilty: IMO, it can be as open as possible - at least recordings
