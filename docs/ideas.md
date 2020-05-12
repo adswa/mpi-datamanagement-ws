@@ -2,6 +2,8 @@ ___
 
 ## General setup
 
+[Google Doc for discussions](https://docs.google.com/document/d/1Lw4o5Q3OMjXgGOyFBUHP--_xv01KJtsY76eViMJJLhw/edit?usp=sharing)
+
 In general, we aim for **one full day workshop** at the MPI Berlin,
 but preparations need to make a transition to a virtual workshop
 as easy as possible. To ensure inclusivity and accessibility (e.g.,
