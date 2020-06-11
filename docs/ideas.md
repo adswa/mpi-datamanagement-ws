@@ -1,3 +1,6 @@
+## General setup
+
+=======
 ___
 
 ## General setup
@@ -14,6 +17,17 @@ to stay physically distant), we should provide virtual means of attending.
 
 Time         | Session name               | Contents
 :----------- | :------------------------: | -----------:
+08.30-09.00  | Arrival                    |
+09.00-10.30  | First morning session      | Concepts, Motivation
+10.30-10.45  | *Coffee break*             |
+10.45-12.15  | Second morning session     | Datalad concepts and principles
+12.15-13.15  | *Lunch break*              |
+13.15-14.45  | First afternoon session    | Reproducible Science
+14.45-15.00  | *Coffee break*             |
+15.00-16.30  | Second afternoon session   | Data publication and collaboration
+16.30-17.00  | Wrap-up, remaining Qs      | Outlook
+
+=======
 08.30-09.00  | Arrival                    | :wave:
 09.00-10.30  | First morning session      | Concepts, Motivation
 10.30-10.45  | *Coffee break*             | :coffee:
@@ -59,6 +73,8 @@ ___
 - Outlook into what is possible: DICOM to BIDS conversion, Metadata, ...?
 - Questions, maybe discuss usecases
 
+## to do and to plan
+=======
 ___
 
 ## To do and to plan
@@ -71,6 +87,7 @@ ___
 * Recording set up
 * Recording publication (platforms, time frame (live streaming, publishing
   post-workshop/...))
+=======
 * Idea: Migrate this repository to the handbook repository, keep mkdocs, and
   create a github page under the handbook namespace -> easier to find, more
   lasting resource
