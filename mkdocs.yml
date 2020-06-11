@@ -7,6 +7,7 @@ docs_dir: docs
 copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
 nav:
   - Home: index.md
+  - Dashboard: dashboard.md
   - Ideas: ideas.md
   - Goals: goals.md
 markdown_extensions:
