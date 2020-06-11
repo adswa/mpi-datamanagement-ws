@@ -8,6 +8,7 @@ copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
 nav:
   - Home: index.md
   - Ideas: ideas.md
+  - Goals: goals.md
 markdown_extensions:
     - admonition
     - codehilite:
