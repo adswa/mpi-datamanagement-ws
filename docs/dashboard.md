@@ -1,27 +1,43 @@
-## Number of attendees
+## What (Training Topic)?
 
-- circa 15 to 30
+Full-day workshops on workflows using DataLad
 
-## Training Topic
+Site-specific focus:
+- **Berlin:** Basic DataLad workflow focusing on data management (e.g., from data collection to paper manuscript)
+- **Juelich:** Less data management centric (there are regular data management courses held by Adina anyway), with elements from the data processing module and sneak-peaks into fMRIPrep, MRIQC, BIDS, and other open software tools
 
-Using DataLad from data acquisition to the finished paper
+## Who teaches (Names)?
 
-## Git Repo
+- [Adina Wagner](mailto:adina.wagner@t-online.de), Juelich Research Centre, INM-7, Psychoinformatics Lab, Juelich, Germany
+- [Lennart Wittkuhn](mailto:wittkuhn@mpib-berlin.mpg.de), Max Planck Institute for Human Development (MPIB), Berlin, Germany
 
-https://github.com/adswa/mpi-datamanagement-ws
+## Who attends (Audience)?
 
-## Expected Course Type
+- **Background: **Neuroscience grad students to PIs whoever is interested) from home institutions + surrounding institutions (for Berlin, e.g., Berlin Universities; for Juelich, e.g. affiliated universities Aachen, Düsseldorf, Köln)
+- **Numer of attendees:** circa 15 to 30 per workshop
 
-1- or 2-day workshop
+## How does it happen (Expected Course Type)?
 
-## Target Course Delivery Dates
+* Full-day workshop (remotely or physically, depending on  COVID-19 situation)
 
-Fall 2020 (either virtual or physical, if situation allows)
+## When does it happen (Target Course Delivery Dates)?
 
-## Other Links
+* MPI Berlin: A full-day workshop is tentatively scheduled for fall, likely virtual
+* Juelich: A date for the Juelich Research Centre workshop is not yet settled.
 
-- [DataLad Handbook](http://handbook.datalad.org/en/latest/)
+## Links
 
-## Audience
+* **Git Repo: ***https://github.com/adswa/mpi-datamanagement-ws
+* **Homepage:** https://adswa.github.io/mpi-datamanagement-ws/ideas/
+* **Notes:** https://docs.google.com/document/d/1Lw4o5Q3OMjXgGOyFBUHP--_xv01KJtsY76eViMJJLhw/edit
 
-- primarily neuroscience gradstudents
+## Computational Infrastructure
+
+tba
+
+## Outcomes
+
+tba
+
+## References
+* [DataLad Handbook](http://handbook.datalad.org/en/latest/)
