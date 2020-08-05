@@ -24,6 +24,11 @@ TODO
 - get a nice URL and keep site up
 - publish slides, videos (decide where)
 
+## Whom is this workshop for?
+
+- Who ever is interested
+- no specific technical or study background required, just interest
+
 ## Other Questions?
 
 Please get in touch!

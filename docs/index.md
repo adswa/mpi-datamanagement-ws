@@ -1,16 +1,34 @@
-Title:   Front page Data Management Workshop
+Title:   Data Management Workshop
 Summary: Overview of the workshop and its scope
 Authors: Adina Wagner
          Lennart Wittkuhn
 Date:    2020
 
-# An Introduction to basic and advanced aspects for reproducible science
-TODO
+# An Introduction to basic and advanced aspects of data management for reproducible science
+
+
 
 Some intro here
 
+- what can participants expect?
+- a bit of a schedule, overview of contents
 
 
+# Logistics
+
+### Location
+The workshop will take place virtually, at UTC+2 (Berlin time).
+
+### Date and time
+The workshop is schedules as a full day event (including breaks) at <FIXME INSERT DATE>.
+Materials and recordings will be made available publicly after the workshop.
+
+
+
+### Registration
+Attendance is free, but a registration is required.
+To register for the workshop, please write an e-mail with the subject header **"MPI Data Management Workshop Registration"** to [datamanagement.mpi@gmail.com](mailto:datamanagement.mpi@gmail.com).
+Your e-mail address will be used to send out log in details to the virtual meeting and will be not be stored beyond the workshop.
 
 # Instructors
 
