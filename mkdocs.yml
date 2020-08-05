@@ -1,4 +1,4 @@
-site_name: Datamanagement Workshop
+site_name: Datamanagement@MPI Berlin
 site_author: Adina Wagner & Lennart Wittkuhn
 repo_url: https://github.com/adswa/mpi-datamanagement-ws
 site_url: https://adswa.github.io/mpi-datamanagement-ws/
@@ -6,10 +6,21 @@ repo_name: adswa/mpi-datamanagement-ws
 docs_dir: docs
 copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
 nav:
-  - Home: index.md
-  - Dashboard: dashboard.md
-  - Ideas: ideas.md
-  - Goals: goals.md
+  - Data Management Workshop: index.md
+  - Content:
+      - Welcome: content/welcome.md
+      - Getting started: content/getting_started.md
+      - Motivation: content/motivation.md
+      - Basic Principles: content/basicprinciples.md
+      - Reproducible Science: content/reproduciblescience.md
+      - Data publication: content/datapublication
+      - Collaboration: content/collaboration.md
+  - Behind the scenes:
+      - Dashboard: organization/dashboard.md
+      - Ideas: organization/ideas.md
+      - Goals: organization/goals.md
+  - Frequently Asked Questions: FAQ.md
+  - Contributing: contributing.md
 markdown_extensions:
     - admonition
     - codehilite:
@@ -31,7 +42,7 @@ markdown_extensions:
         custom_checkbox: true
     - pymdownx.tilde
     - toc:
-        baselevel: 1
+        baselevel: 2
         permalink: true
         separator: "_"
         toc_depth: 3
@@ -41,6 +52,6 @@ theme:
     language: en
     palette:
         primary: 'black'
-        accent: yellow
+        accent: 'yellow'
 plugins:
     - search
