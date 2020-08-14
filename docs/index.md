@@ -1,34 +1,58 @@
-Title:   Data Management Workshop
+Title:   Data Management for reproducible science
 Summary: Overview of the workshop and its scope
 Authors: Adina Wagner
          Lennart Wittkuhn
 Date:    2020
 
-# An Introduction to basic and advanced aspects of data management for reproducible science
+[Research Data Management](https://the-turing-way.netlify.app/reproducible-research/rdm.html) is a core component of good scientific practice and can help to make your work not only more reproducible and transparent - but also easier.
+
+Ever worked through such a directory?
+
+<a href="http://phdcomics.com/comics/archive.php?comicid=1323" target="_blank"><img src="img/phd052810s.gif" alt="A metaphor for papers and project directories" width="650"/></a>
+
+Is this metaphor fitting to a recent paper of yours?
+<a href="https://dribbble.com/shots/3090048-Front-end-vs-Back-end" target="_blank">
+<img src="img/frontend_vs_backend_paper.png" alt="A metaphor for papers and project directories" width="650"/></a>
+
+Have you ever looked like this trying to figure out how a colleagues script is supposed to work (or an old script of yourself)?
+
+<a href="http://phdcomics.com/comics/archive.php?comicid=545" target="_blank">
+<img src="img/frustration.jpg" alt="A metaphor for papers and project directories" width="650"/></a>
 
 
+In this one-day workshop, organized as part of the Reproducible Neuroimaging ([ReproNim](https://www.repronim.org/)) initiative to improve the reproducibility of neuroimaging science, ReproNim fellows will introduce core concepts and software tools that can make your next research project easier: Local version control, principles for data analysis, data publication, and collaborative scientific workflows.
 
-Some intro here
+The workshop will be virtual and free to attend.
 
-- what can participants expect?
-- a bit of a schedule, overview of contents
+# Workshop Contents
 
+The workshop will center around [DataLad](https://www.datalad.org/), an open source software tool for data management and data publication. 
+We will introduce core concepts of good research data management - joint version control of code and data, provenance capture for reproducible analysis, organizational principles for data analysis, and workflows and services for data publication and collaboration - in conjunction with demonstrating readily-applicable workflows or examples.
+
+If you have always wanted to get going with version control, are curious to find out how to use DataLad, or want see simple workflows for reproducible science - from data sharing to reproducible papers - this workshop will be useful and easier than you think.
 
 # Logistics
 
-### Location
-The workshop will take place virtually, at UTC+2 (Berlin time).
-
-### Date and time
-The workshop is schedules as a full day event (including breaks) at <FIXME INSERT DATE>.
+### Location, Date and time
+The workshop will take place virtually, at UTC+2 (Berlin time) at <FIXME INSERT DATE>.
+It is scheduled as a full day event (including breaks).
 Materials and recordings will be made available publicly after the workshop.
-
-
 
 ### Registration
 Attendance is free, but a registration is required.
 To register for the workshop, please write an e-mail with the subject header **"MPI Data Management Workshop Registration"** to [datamanagement.mpi@gmail.com](mailto:datamanagement.mpi@gmail.com).
-Your e-mail address will be used to send out log in details to the virtual meeting and will be not be stored beyond the workshop.
+Your e-mail address will be used to send out further information as well as log in details to the virtual meeting. Your data will be not be stored beyond the workshop, and is only used for workshop coordination.
+
+### Preparation
+
+As the workshop is virtual, on-site trouble-shooting and help is very limited.
+We ask participants to prepare by installing and testing all required software prior to the workshop, and reach out early to the instructors if they require help.
+Instructions can be found in the section [Preparations for participants](content/getting_started.md).
+
+### Code of Conduct
+
+We ask all participants to adhere to a code of conduct for the virtual meeting.
+It can be found in the section [Code of Conduct](coc.md).
 
 # Instructors
 
@@ -44,7 +68,13 @@ Your e-mail address will be used to send out log in details to the virtual meeti
 
 # Sponsors
 
-<img src="img/MPI.png" alt="MPI" height="200"/>
+<img src="img/MPI.png" alt="MPI" height="150"/>
 <img style="padding: 20px; float: right" src="img/fzj_logo.svg" alt="FZJ" width="400"/>
 <img style="float: left; padding: 10px" src="img/repronim.png" alt="ReproNim" width="150"/>
 <img src="img/INCF.jpg" alt="INCF" height="200"/>
+
+
+### Image credit
+
+PHD Comics: [phdcomics.com/comics/archive.php?comicid=545](http://phdcomics.com/comics/archive.php?comicid=545), [phdcomics.com/comics/archive.php?comicid=1323](http://phdcomics.com/comics/archive.php?comicid=1323),
+Frontend-Backend Comic: adapted from [dribbble.com/shots/3090048-Front-end-vs-Back-end](https://dribbble.com/shots/3090048-Front-end-vs-Back-end)

@@ -6,10 +6,10 @@ repo_name: adswa/mpi-datamanagement-ws
 docs_dir: docs
 copyright: 'Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn'
 nav:
-  - Data Management Workshop: index.md
+  - Data Management with DataLad: index.md
+  - Preperations for participants: content/getting_started.md
   - Content:
       - Welcome: content/welcome.md
-      - Getting started: content/getting_started.md
       - Motivation: content/motivation.md
       - Basic Principles: content/basicprinciples.md
       - Reproducible Science: content/reproduciblescience.md
@@ -21,6 +21,7 @@ nav:
       - Goals: organization/goals.md
   - Frequently Asked Questions: FAQ.md
   - Contributing: contributing.md
+  - Code of Conduct: coc.md
 markdown_extensions:
     - admonition
     - codehilite:
