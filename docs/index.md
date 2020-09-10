@@ -34,7 +34,7 @@ If you have always wanted to get going with version control, are curious to find
 # Logistics
 
 ### Location, Date and time
-The workshop will take place virtually, at UTC+2 (Berlin time) at <FIXME INSERT DATE>.
+The workshop will take place virtually, at UTC+2 (Berlin time) at November 18th.
 It is scheduled as a full day event (including breaks).
 Materials and recordings will be made available publicly after the workshop.
 
