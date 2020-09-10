@@ -51,6 +51,7 @@ ___
 #### 4 Data publication and collaboration
 
 - Basic principles of shared datasets and collaborative workflows
+- Hands-on: Syncing between a local computer and a shared compute cluster
 - Hands-on: dataset publication to GitHub/GitLab/Gin (whatever)
 
 #### 5 Wrap-up/Outlook
