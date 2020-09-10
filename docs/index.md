@@ -73,6 +73,14 @@ Instructions can be found in the section [Preparations for participants](content
 We ask all participants to adhere to a code of conduct for the virtual meeting.
 It can be found in the section [Code of Conduct](coc.md).
 
+### Questions
+
+Do you have questions or are missing information on this website? Here are your options:
+
+1. Please check out the [Frequently Asked Questions (FAQ)](FAQ.md) which might already provide an answer to your question.
+2. Please open a [new Issue on GitHub](https://github.com/adswa/mpi-datamanagement-ws/issues). We will then update the website accordingly with an answer. Please note, that the GitHub issues are public.
+3. Write us an e-mail at [datamanagement.mpi@gmail.com](mailto:datamanagement.mpi@gmail.com).
+
 # Instructors
 
 |  **Adina Wagner** | Personal website and contact details:  [adina-wagner.com](https://adina-wagner.com)      |
