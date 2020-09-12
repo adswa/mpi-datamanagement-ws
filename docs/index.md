@@ -7,7 +7,7 @@ Date:    2020
 # Overview
 
 - :book: **What?** Full-day workshop on reproducible data management (centered around [DataLad](https://www.datalad.org/))
-- :clock: **When?** UTC+1 (Berlin time) at Wednesday, November 18th 2020
+- :clock: **When?** 9am - 5pm UTC+1 (Berlin time) at Wednesday, November 18th 2020
 - :house: **Where?** Virtual (links to video-conference system will be provided via e-mail following [registration via the online form](#logistics))
 - :smiley: **Who?** The workshop is instructed by [Adina Wagner and Lennart Wittkuhn](#instructors). Everyone who would like to learn about data management and DataLad is invited to participate. The target audience are researchers at the [Max Planck Institute for Human Development, Berlin](https://www.mpib-berlin.mpg.de/en).
 - :moneybag: **Costs?** The workshop is free to attend.
