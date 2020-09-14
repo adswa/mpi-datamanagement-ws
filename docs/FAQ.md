@@ -1,7 +1,7 @@
 ## When and where will the workshop take place?
 
 November 18th, 9am - 5pm UTC+1 (Berlin Winter Time).
-The workshop will be help virtually via the video conference system [BigBlueButton](https://bigbluebutton.org/)
+The workshop will be help virtually via the video conference system [BigBlueButton](https://bigbluebutton.org/).
 
 ## How can I participate in the workshop?
 
