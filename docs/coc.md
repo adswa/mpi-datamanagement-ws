@@ -10,7 +10,7 @@ Date:    2020
 During this workshop, we want to ensure a safe, productive, and welcoming environment for everyone who attends.
 All participants and speakers are expected to abide by this Code of Conduct.
 We do not tolerate any form of discrimination or harassment in any form or by any means, including, but not limited to, chat messages or video calls.
-If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the organizers of this workshop, Adina Wagner (adina.wagner@t-online.de) and Lennart Wittkuhn (wittkuhn@mpib-berlin.mpg.de)so that we can take the appropriate action.
+If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the organizers of this workshop, Adina Wagner (adina.wagner@t-online.de) and Lennart Wittkuhn (wittkuhn@mpib-berlin.mpg.de) so that we can take the appropriate action.
 
 Unacceptable Behavior is defined as:
 
