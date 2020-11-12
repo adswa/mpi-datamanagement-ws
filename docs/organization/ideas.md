@@ -15,7 +15,7 @@ to stay physically distant), we should provide virtual means of attending.
 
 Time         | Session name               | Contents
 :----------- | :------------------------: | -----------:
-08.30-09.00  | Arrival                    | :wave:
+08.30-09.00  | Arrival                    | :wave: Have a coffee and chat!
 09.00-10.30  | First morning session      | Concepts, Motivation
 10.30-10.45  | *Coffee break*             | :coffee:
 10.45-12.15  | Second morning session     | Datalad concepts and principles
