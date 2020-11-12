@@ -27,3 +27,5 @@ Demo: Reproducible paper (e.g., https://github.com/psychoinformatics-de/paper-re
 # Summary
 
 # Further reading, helpful links, and background information
+
+- [Cheatsheet for standard DataLad commands](http://handbook.datalad.org/en/latest/basics/101-136-cheatsheet.html) (PDF download)
