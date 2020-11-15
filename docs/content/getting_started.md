@@ -37,9 +37,12 @@ If you haven't yet, please make sure to
 
 - Configure Git and
 - Create an SSH key
-- Create a [GitHub account](https://github.com) (optional)
 
 prior to the workshop.
+
+During the workshop, we will demonstrate workflows that involve digital
+infrastructure from the MPIB, in particular the [MPIB GitLab instance](https://git.mpib-berlin.mpg.de/) and the [MPIB Keeper instance](https://keeper.mpdl.mpg.de).
+If you are affiliated with the MPIB and interested in working through these workflows as well, please make sure that you have a user account on both services.
 
 ### Configure Git
 
