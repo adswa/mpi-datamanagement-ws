@@ -44,7 +44,7 @@ Please note that the workshop will be recorded.
 The recording will include the following aspects of the main conferencing room:
 
 - Slides/Screenshares
-- Videos of the speakers
+- Potentially videos of the speakers
 - All audio
 
 The recording will **not** include:
