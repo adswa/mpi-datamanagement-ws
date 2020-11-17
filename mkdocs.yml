@@ -14,7 +14,6 @@ nav:
       - Basic Principles: content/basicprinciples.md
       - Reproducible Science: content/reproduciblescience.md
       - Data publication: content/datapublication.md
-      - Collaboration: content/collaboration.md
   - Behind the scenes:
       - Dashboard: organization/dashboard.md
       - Ideas: organization/ideas.md
