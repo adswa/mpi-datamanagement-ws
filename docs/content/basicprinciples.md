@@ -8,23 +8,16 @@ Date:    2020
 
 # What will this session teach me?
 
-- Intro to DataLad
-- Basics of local data/code version control
-- Aim: First, show how easy things are, and give everyone a hang on core concepts. Then, show them where one could get from there (reproducible paper)
+- A thorough intro to using DataLad for research and research data management
 
-# Basics of local data/code version control
 
-# Hands-on
+## Slides
 
-- tasks to exercise basic building blocks (dataset, datalad create, datalad save, datalad clone, datalad push, datalad update), handbook-like tasks centered around the data
+You can get a PDF of the slides [here](https://github.com/datalad-handbook/course/blob/master/talks/PDFs/MPI_Berlin_02.pdf).
 
-# Basics of modular data management for reproducible science (YODA)
+## Hands-on
 
-# Demo
-
-Demo: Reproducible paper (e.g., https://github.com/psychoinformatics-de/paper-remodnav/)
-
-# Summary
+You can find a code-along tutorial [here](handbook.datalad.org/r.html?MPIBerlin)
 
 # Further reading, helpful links, and background information
 

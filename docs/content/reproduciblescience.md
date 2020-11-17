@@ -10,7 +10,10 @@ Date:    2020
 - The notion of a "reproducible paper", a research object that goes beyond a PDF, but includes everything that is necessary to reproduce a scientific result.
 - Concepts & technology overview and short introduction to containers, computational environments. What is a container, how can a container help reproducibility, how can I get or make containers and add them to my dataset?
 
-Find the slides at [github.com/datalad-handbook/course/](https://github.com/datalad-handbook/course/blob/master/talks/PDFs/MPI_Berlin_03.pdf).
+## Slides
+
+You can get a PDF of the slides [here](https://github.com/datalad-handbook/course/blob/master/talks/PDFs/MPI_Berlin_03.pdf).
+
 # Hands-on
 
 ## Hands-on 1: Write a reproducible paper (LaTeX, Python, Make & DataLad)
