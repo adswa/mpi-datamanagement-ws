@@ -1,0 +1,717 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://adswa.github.io/mpi-datamanagement-ws/">
+      
+      
+        <meta name="author" content="Adina Wagner & Lennart Wittkuhn">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Data Management for reproducible science - Datamanagement Workshop at MPI Berlin</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4dd2dd8d.min.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/palette.6a5ad368.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#000000">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://adswa.github.io/mpi-datamanagement-ws/" title="Datamanagement Workshop at MPI Berlin" class="md-header-nav__button md-logo" aria-label="Datamanagement Workshop at MPI Berlin">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Datamanagement Workshop at MPI Berlin
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Data Management for reproducible science
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/adswa/mpi-datamanagement-ws/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    adswa/mpi-datamanagement-ws
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://adswa.github.io/mpi-datamanagement-ws/" title="Datamanagement Workshop at MPI Berlin" class="md-nav__button md-logo" aria-label="Datamanagement Workshop at MPI Berlin">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Datamanagement Workshop at MPI Berlin
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/adswa/mpi-datamanagement-ws/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    adswa/mpi-datamanagement-ws
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Management Workshop with DataLad
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="." title="Data Management Workshop with DataLad" class="md-nav__link md-nav__link--active">
+      Data Management Workshop with DataLad
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop_contents" class="md-nav__link">
+    Workshop Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistics" class="md-nav__link">
+    Logistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructors" class="md-nav__link">
+    Instructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sponsors" class="md-nav__link">
+    Sponsors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="content/getting_started/" title="Preperations for participants" class="md-nav__link">
+      Preperations for participants
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Content
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Content" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Content
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="content/welcome/" title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="content/motivation/" title="Motivation" class="md-nav__link">
+      Motivation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="content/basicprinciples/" title="Basic Principles" class="md-nav__link">
+      Basic Principles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="content/reproduciblescience/" title="Reproducible Science" class="md-nav__link">
+      Reproducible Science
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="content/datapublication/" title="Data publication" class="md-nav__link">
+      Data publication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Behind the scenes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Behind the scenes" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Behind the scenes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="organization/dashboard/" title="Dashboard" class="md-nav__link">
+      Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="organization/ideas/" title="Ideas" class="md-nav__link">
+      Ideas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="organization/goals/" title="Goals" class="md-nav__link">
+      Goals
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="FAQ/" title="Frequently Asked Questions" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="coc/" title="Code of Conduct" class="md-nav__link">
+      Code of Conduct
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop_contents" class="md-nav__link">
+    Workshop Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistics" class="md-nav__link">
+    Logistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructors" class="md-nav__link">
+    Instructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sponsors" class="md-nav__link">
+    Sponsors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/adswa/mpi-datamanagement-ws/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Data Management Workshop with DataLad</h1>
+                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><img alt="📖" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4d6.png" title=":book:" /> <strong>What?</strong> Full-day workshop on reproducible data management (centered around <a href="https://www.datalad.org/">DataLad</a>)</li>
+<li><img alt="🕰️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f570.png" title=":clock:" /> <strong>When?</strong> 9am - 5pm UTC+1 (Berlin time) at Wednesday, November 18<sup>th</sup> 2020</li>
+<li><img alt="🏠" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f3e0.png" title=":house:" /> <strong>Where?</strong> Virtual (links to video-conference system will be provided via e-mail following <a href="#logistics">registration via the online form</a>)</li>
+<li><img alt="😃" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f603.png" title=":smiley:" /> <strong>Who?</strong> The workshop is instructed by <a href="#instructors">Adina Wagner and Lennart Wittkuhn</a>. Everyone who would like to learn about data management and DataLad is invited to participate. The target audience are researchers at the <a href="https://www.mpib-berlin.mpg.de/en">Max Planck Institute for Human Development, Berlin</a>.</li>
+<li><img alt="💰" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4b0.png" title=":moneybag:" /> <strong>Costs?</strong> The workshop is free to attend.</li>
+</ul>
+<hr />
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/rdm.html">Research Data Management</a> is a core component of good scientific practice and can help to make your work not only more reproducible and transparent - but also easier.</p>
+<blockquote>
+<p>Ever worked through such a directory?</p>
+</blockquote>
+<p><a href="http://phdcomics.com/comics/archive.php?comicid=1323" target="_blank"><img src="img/phd052810s.gif" alt="A metaphor for papers and project directories" width="650"/></a></p>
+<blockquote>
+<p>Is this metaphor fitting to a recent paper of yours?</p>
+</blockquote>
+<p><a href="https://dribbble.com/shots/3090048-Front-end-vs-Back-end" target="_blank">
+<img src="img/frontend_vs_backend_paper.png" alt="A metaphor for papers and project directories" width="650"/></a></p>
+<blockquote>
+<p>Have you ever looked like this trying to figure out how a colleagues script is supposed to work (or an old script of yourself)?</p>
+</blockquote>
+<p><a href="http://phdcomics.com/comics/archive.php?comicid=545" target="_blank">
+<img src="img/frustration.jpg" alt="A metaphor for papers and project directories" width="650"/></a></p>
+<p>In this full-day workshop, organized as part of the Reproducible Neuroimaging (<a href="https://www.repronim.org/">ReproNim</a>) initiative to improve the reproducibility of neuroimaging science, <a href="#instructors">ReproNim fellows</a> will introduce core concepts and software tools that can make your next research project easier: Version control, principles for data analysis, data publication, and collaborative scientific workflows.</p>
+<p>The workshop will be virtual and free to attend.</p>
+<h2 id="workshop_contents">Workshop Contents<a class="headerlink" href="#workshop_contents" title="Permanent link">&para;</a></h2>
+<p>The workshop will center around <a href="https://www.datalad.org/">DataLad</a>, an open source software tool for data management and data publication.
+We will introduce core concepts of good research data management - joint version control of code and data, provenance capture for reproducible analysis, organizational principles for data analysis, and workflows and services for data publication and collaboration - in conjunction with demonstrating readily-applicable workflows or examples.</p>
+<p>If you have always wanted to get going with version control, are curious to find out how to use DataLad, or want see simple workflows for reproducible science - from data sharing to reproducible papers - this workshop will be useful and easier than you think.</p>
+<h2 id="logistics">Logistics<a class="headerlink" href="#logistics" title="Permanent link">&para;</a></h2>
+<h4>Location, date and time</h4>
+<p>The workshop will take place virtually, at UTC+2 (Berlin time) at Wednesday, November 18<sup>th</sup> 2020.
+It is scheduled as a full-day event (including breaks).
+Materials and recordings will be made available publicly after the workshop.</p>
+<h4>Registration</h4>
+<p>Attendance is free, but a registration is required.</p>
+<p><img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/27a1.png" title=":arrow_right:" /> <strong>To register for the workshop, please fill out <a href="https://forms.gle/4DarZ5XFihQwSKZ7A">this online form</a>.</strong></p>
+<p>Your e-mail address will be used to send out further information as well as log in details to the virtual meeting.
+Your data will be not be stored beyond the workshop, and is only used for workshop coordination.</p>
+<p>In case of any questions about the registration, please write an e-mail with the subject header <strong>"MPI Data Management Workshop Registration"</strong> to <a href="mailto:datamanagement.mpi@gmail.com">datamanagement.mpi@gmail.com</a>.</p>
+<h4>Preparation</h4>
+<p>As the workshop is virtual, on-site trouble-shooting and help is very limited.
+We ask participants to prepare by installing and testing all required software prior to the workshop, and reach out early in advance to the <a href="#instructors">instructors</a> if they require help.
+Instructions can be found in the section <a href="content/getting_started/">Preparations for participants</a>.</p>
+<h4>Code of Conduct</h4>
+<p>We ask all participants to adhere to a code of conduct for the virtual meeting.
+It can be found in the section <a href="coc/">Code of Conduct</a>.</p>
+<h4>Questions</h4>
+<p>Do you have questions or are missing information on this website? Here are your options:</p>
+<ol>
+<li>Please check out the <a href="FAQ/">Frequently Asked Questions (FAQ)</a> which might already provide an answer to your question.</li>
+<li>Please open a <a href="https://github.com/adswa/mpi-datamanagement-ws/issues">new Issue on GitHub</a>. We will then update the website accordingly with an answer. Please note, that the GitHub issues are public.</li>
+<li>Write us an e-mail at <a href="mailto:datamanagement.mpi@gmail.com">datamanagement.mpi@gmail.com</a>.</li>
+</ol>
+<h2 id="instructors">Instructors<a class="headerlink" href="#instructors" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Adina Wagner</strong></th>
+<th>Personal website and contact details:  <a href="https://adina-wagner.com">adina-wagner.com</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adina is a doctoral researcher in the <a href="https://www.psychoinformatics.de/">Psychoinformatics Lab</a> at the <a href="https://www.fz-juelich.de/inm/inm-7/DE/Home/home_node.html">INM-7, Research Centre Jülich</a>. She is a part of the <a href="https://datalad.org">DataLad</a> Team with a leading role in documentation, teaching, and outreach, and a 2020/21 <a href="https://www.repronim.org/fellowship.html">ReproNim/INCF Fellow</a>.</td>
+<td><img src="img/headshot_adinawagner.jpg" alt="Picture of Adina" width="200"/></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Lennart Wittkuhn</strong></th>
+<th>Personal website and contact details: <a href="https://lennartwittkuhn.com/">lennartwittkuhn.com/</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lennart is a PhD candidate in Cognitive Neuroscience and works with Nico Schuck in the Max Planck Research Group NeuroCode at the Max Planck Institute for Human Development in Berlin. He is a member of the International Max Planck Research School for Computational Psychiatry and Ageing Research and a 2020/21 <a href="https://www.repronim.org/fellowship.html">ReproNim/INCF Fellow</a>.</td>
+<td><img src="img/headshot_lennartwittkuhn.jpg" alt="Picture of Lennart" width="200"/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sponsors">Sponsors<a class="headerlink" href="#sponsors" title="Permanent link">&para;</a></h2>
+<p><img src="img/MPI.png" alt="MPI" height="150"/>
+<img style="padding: 20px; float: right" src="img/fzj_logo.svg" alt="FZJ" width="400"/>
+<img style="float: left; padding: 10px" src="img/repronim.png" alt="ReproNim" width="150"/>
+<img src="img/INCF.jpg" alt="INCF" height="200"/></p>
+<h4>Image credits</h4>
+<ul>
+<li>PHD Comics: <a href="http://phdcomics.com/comics/archive.php?comicid=545">phdcomics.com/comics/archive.php?comicid=545</a>, <a href="http://phdcomics.com/comics/archive.php?comicid=1323">phdcomics.com/comics/archive.php?comicid=1323</a></li>
+<li>Frontend-Backend Comic: adapted from <a href="https://dribbble.com/shots/3090048-Front-end-vs-Back-end">dribbble.com/shots/3090048-Front-end-vs-Back-end</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="content/getting_started/" title="Preperations for participants" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Preperations for participants
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy 2020 Adina Wagner & Lennart Wittkuhn
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
